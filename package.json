@@ -13,6 +13,7 @@
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@altv/types-webview": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
