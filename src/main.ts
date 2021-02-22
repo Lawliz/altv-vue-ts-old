@@ -8,8 +8,6 @@ document.addEventListener('contextmenu', (e) => {
     e.preventDefault()
 }, false)
 
-Controller.loadApp('home', {})
-
 if ('alt' in window) {
     alt.on('webview:LoadApp', (appName, params) => {
         Controller.loadApp(appName, params)
