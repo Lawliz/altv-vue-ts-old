@@ -1,5 +1,6 @@
 import { createApp, defineComponent } from 'vue'
 
+import { Controller, EventManager } from './main'
 import AppComponent from './App.vue'
 import Router from "./router"
 import store from './store'
@@ -32,8 +33,8 @@ export default class AppController {
         const app = createApp(ApplicationComponent)
 
         app.config.globalProperties = {
-            $controller: undefined,
-            $event: undefined,
+            $controller: Controller,
+            $event: EventManager,
             $component: Component,
             params: this.params[appName],
             appName
